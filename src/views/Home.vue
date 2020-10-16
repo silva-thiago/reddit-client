@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Reddit Client"/>
+    <Reddit />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import Reddit from '@/components/Reddit.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    Reddit,
   },
 };
 </script>
