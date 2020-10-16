@@ -2,12 +2,15 @@
 
 ## Specs
 
+### v2.0.0
+
+* [] Search Reddit
+
 ### v1.0.0
 
 * [x] Setup
-* [ ] Lista all posts from /r/all
-* [ ] List posts for a specific sub Reddit
-* [ ] Search Reddit
+* [x] Lista all posts from /r/all
+* [x] List posts for a specific sub Reddit
 
 ## Project setup
 ```
