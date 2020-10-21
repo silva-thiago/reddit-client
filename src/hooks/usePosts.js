@@ -2,7 +2,7 @@ import { reactive, watch } from 'vue';
 
 import API from '@/lib/API';
 
-export default function usePosts(subreddit) {
+export default function usePosts(subreddit, params = {}) {
   const postsState = reactive({
     loading: false,
     error: '',
@@ -11,7 +11,7 @@ export default function usePosts(subreddit) {
 
   async function loadData() {
     try {
-      const response = await API.getPosts(subreddit);
+      const response = await API.getPosts(subreddit.value, params);
 
       postsState.loading = true;
       postsState.error = '';
@@ -24,7 +24,7 @@ export default function usePosts(subreddit) {
     }
   }
 
-  watch(() => subreddit, loadData, { immediate: true });
+  watch(() => subreddit.value, loadData, { immediate: true });
 
   return postsState;
 }
