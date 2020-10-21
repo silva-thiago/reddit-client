@@ -1,10 +1,11 @@
 # reddit-client
+Building a Reddit Client with Vue.js 3 Composition API
 
 ## Specs
 
 ### v2.0.0
 
-* [] Search Reddit
+* [x] Search for a Reddit
 
 ### v1.0.0
 
