@@ -1,14 +1,17 @@
 <template>
-  <nav class="nav-wrapper blue">
-    <div class="container">
-      <a href="#" class="brand-logo center">Reddit Client</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <!-- <li><a href="sass.html">Sass</a></li> -->
-      </ul>
-    </div>
-  </nav>
+  <Navbar />
   <router-view />
 </template>
+
+<script>
+import Navbar from '@/components/Navbar.vue';
+
+export default {
+  components: {
+    Navbar,
+  },
+};
+</script>
 
 <style lang="scss">
 /** app styles **/
